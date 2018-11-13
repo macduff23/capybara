@@ -427,7 +427,7 @@ Capybara::SpecHelper.spec 'node' do
       @session.execute_script <<~JS
         setTimeout(function(){ $('#cover').hide(); }, 3000)
       JS
-      expect { obscured.click(wait: 3) }.not_to raise_error
+      expect { obscured.click(wait: 4) }.not_to raise_error
     end
 
     it 'should not retry clicking when wait is disabled', requires: [:js] do
