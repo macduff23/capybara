@@ -83,7 +83,6 @@ class Capybara::RackTest::Node < Capybara::Driver::Node
   def visible?
     string_node.visible?
   end
-  alias clickable? visible?
 
   def checked?
     string_node.checked?
